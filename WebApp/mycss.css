@@ -1,0 +1,17 @@
+h1
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.style1
+{
+    background-color: aquamarine;
+}
+#style2
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.style3
+{
+    font-style: italic;
+}
