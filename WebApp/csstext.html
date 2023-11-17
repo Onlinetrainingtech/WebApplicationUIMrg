@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            p.f2
+            {
+                color:red;
+                background-color:aqua;
+                text-align: center;
+                text-align-last: justify;
+                direction: ltr;
+            }
+            p.f1
+            {
+               direction: ltr;
+               unicode-bidi: bidi-override;
+               
+            }
+            img.a
+            {
+                /* vertical-align: baseline; */
+                /* vertical-align: text-bottom; */
+                vertical-align: text-top;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="f2">
+            Lorem ipsum dolor sit amet consectetur
+             adipisicing elit. Excepturi nihil, 
+             commodi consectetur provident dignissimos pariatur
+              similique unde possimus beatae cumque perferendis laborum odio.
+             Velit ipsum illo molestias minima molestiae fugit.
+        </p>
+        <p class="f1">
+            This is <img class="a" src="images/b1.jpeg" width="9px" height="9px"/>right to left text
+        </p>
+    </body>
+</html>
