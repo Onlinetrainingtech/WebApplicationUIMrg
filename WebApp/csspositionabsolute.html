@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            div.relative
+            {
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid brown;
+            }
+            div.absolute
+            {
+               position: absolute;
+               top:80px;
+               right: 0;
+               width: 200px;
+               height: 100px;
+               border: 3px solid pink;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Position:Absolute</h2>
+        <p>
+            The element with class "absolute" is absolutely positioned in relation to the nearest positioned ancestor (instead of being placed according to the
+        </p>
+        <div class="relative">
+          This is dive element has position relative
+          <div class="absolute">
+             This is div element has position
+          </div>
+        </div>
+    </body>
+</html>
