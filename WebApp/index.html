@@ -6,24 +6,37 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover();
+            })
+        </script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <!--Nav Start-->
         <center><h3>E-Kart Application</h3></center>
-        <div class="navbar">
+        <div class="navbar navbar-inverse navbar-fixed-top">
             <a class="navbar-brand" href="#">EKart</a>
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="#" class="glyphicon glyphicon-home">Home</a>
+                    <a href="#" class="glyphicon glyphicon-home" data-toggle="tooltip" title="Home" data-placement="top">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="glyphicon glyphicon-user">Login</a>
+                    <a href="projectlogin.html" class="glyphicon glyphicon-user" data-toggle="tooltip" title="Login" data-placement="bottom">Login</a>
                 </li>
                 <li>
-                    <a href="#" class="glyphicon glyphicon-th-list">Register</a>
+                    <a href="projectregister.html" class="glyphicon glyphicon-th-list" data-toggle="tooltip" title="Register" data-placement="left">Register</a>
                 </li>
                 <li>
-                    <a href="#" class="glyphicon glyphicon-folder-open">ViewDetails</a>
+                    <a href="projectviewdetails.html" class="glyphicon glyphicon-folder-open" data-toggle="tooltip" title="Viewdetails">ViewDetails</a>
+                </li>
+                <li>
+                    <a href="" class="glyphicon glyphicon-folder-open" data-toggle="popover" title="popoverheader" data-content="Some Content">PopOver</a>
                 </li>
             </ul>
         </div>
