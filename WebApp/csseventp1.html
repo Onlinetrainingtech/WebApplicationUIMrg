@@ -1,0 +1,66 @@
+<!-- <button type="button" onclick="Sample()">ClickHere</button>
+<script>
+function Sample()
+{
+    alert("This is Sample of function..")
+}
+</script> -->
+
+<!-- Enter the name:<input type="text" onfocus="myfunction(this)"/>
+<script>
+   
+
+    function myfunction(x)
+    {
+        x.style.background="yellow";
+    }
+
+</script> -->
+<!-- <script>
+     function myfunction(x){
+        x.value='';
+        if (x.createTextRange) {
+            var range = x.createTextRange();
+            range.execCommand("Cut");
+            }
+            else  if (window.getSelection) {
+                var sel = window.getSelection();
+                var txt = document.createTextNode('');
+                sel.removeAllRanges();
+                document.body.appendChild(txt);
+                sel.addRange(document.createRange());
+                }}
+</script> -->
+
+<!-- Enter uname:<input type="text" id="u1" onblur="myfunction()"/>
+<script>
+    function myfunction(){
+        let x=document.getElementById("u1");
+        x.value=x.value.toUpperCase();
+    }
+</script> -->
+<!-- <p>Welcome to the Application</p>
+<p id="my1" onmousedown="mouseDown()" onmouseup="mouseUp()">This is Event</p>
+<script>
+    function mouseDown()
+    {
+        document.getElementById("my1").style.color="red";
+    }
+    function mouseUp()
+    {
+        document.getElementById("my1").style.color="blue";
+    }
+</script> -->
+<!-- <body onload="myfun1()">
+<p>Welcome to the Application</p>
+</body>
+<script>
+    function myfun1()
+    {
+        alert("Welcome to the site")
+    }
+</script> -->
+<form>
+    Name : <input type="text" name="name" required oninvalid="alert('You must fill the data')"/><br>
+    <input type="submit" value="submit"/>
+</form>

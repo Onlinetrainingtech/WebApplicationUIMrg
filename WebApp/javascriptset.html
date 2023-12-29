@@ -1,0 +1,39 @@
+<!-- TotalSize is::<p id="d1"></p>
+<script>
+    const letters=new Set(["a","a","b","c"])
+    document.getElementById("d1").innerHTML=letters.size;
+</script> -->
+<!-- <p id="d1"></p>
+<script>
+    const g1=new Set();
+
+    g1.add("a1")
+    g1.add("b1")
+    g1.add("c1")
+
+   // document.getElementById("d1").innerHTML=g1.size;
+
+   let text="";
+   g1.forEach(function(value){
+    text+=value+"<br>"
+   })
+   document.getElementById("d1").innerHTML=text;
+</script> -->
+
+<p id="d1"></p>
+<script>
+    const g1=new Set();
+
+    g1.add("a1")
+    g1.add("b1")
+    g1.add("c1")
+
+   // document.getElementById("d1").innerHTML=g1.size;
+
+   let text="";
+  
+   for (const x of g1.values()){
+    text+=x+"<br>"
+   }
+   document.getElementById("d1").innerHTML=text;
+</script>

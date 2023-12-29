@@ -1,0 +1,18 @@
+Your value is::<p id="d1"></p>
+AfterDeletingsize:<p id="d2"></p>
+<script>
+    const f1=new Map([
+        ["name","zhangsan"],["age",23],["sex","male"]
+    ]);
+    // console.log(f1.get("name"));
+    // document.getElementById("d1").innerHTML=f1.get("name")
+    // f1.delete("name")
+    // document.getElementById("d2").innerHTML=f1.size;
+    // console.log(f1.has("name"))
+
+    let text="";
+    for (const [key,value] of f1) {
+        text+=`Key:${key} Value:${value} <br>`
+    } 
+    document.write(`The content in the map is : ${text}`);
+    </script>
