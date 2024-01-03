@@ -1,0 +1,28 @@
+<!-- <script>
+    //Creating a Map
+    let map1=new Map([
+        ["name","John"],["age",30],["city","New York"]
+        
+    ])
+    console.log("Map1")
+    console.log(map1)
+</script> -->
+<!-- <script>
+    const p1=new Map([
+        ["Laptop",1000],
+        ["SmartPhone",800],
+        ["Tablet",400]
+    ]);
+    console.log(p1)
+</script> -->
+<script>
+    let map1=new Map();
+    map1.set("FirstName","mohamed")
+    map1.set("LastName","Azarudeen")
+    map1.set("Age",34)
+    console.log(map1)
+    function getValueByKey(key){
+        return map1.get(key)
+        }
+        document.write(`My first name is ${getValueByKey('FirstName')}`)
+</script>
