@@ -1,0 +1,8 @@
+<script>
+    const t1='{"name":"azar","dob":"1989-05-25","city":"nmk"}'
+    var obj=JSON.parse(t1);
+    document.write("Name: "+obj.name+"<br/>");  // Outputs
+    document.write("Date of Birth: "+obj.dob+"<br/>");
+    obj.dob=new Date(obj.dob)
+    document.write("After Converting::"+obj.dob+"<br/>");
+</script>
